@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type='text/javascript' src='../js/api.js'></script>
+<script type='text/javascript' src='../js/create.js'></script>
+<script type='text/javascript' src='../js/add_task.js'></script>
+<script type='text/javascript' src='../js/add_teammate.js'></script>
+<script type='text/javascript' src='../js/remove_teammate.js'></script>
+<script type='text/javascript' src='../js/get_projectList.js'></script>
+<script type='text/javascript' src='../js/mark.js'></script>
+<script type='text/javascript' src='../js/rename.js'></script>
+<script type='text/javascript' src='../js/decompose.js'></script>
+<script type='text/javascript' src='../js/switchView.js'></script>
+<script type='text/javascript' src='../js/assign.js'></script>
+<script type='text/javascript' src='../js/unassign.js'></script>
+<script type="text/javascript">
+	
+	function initialize() {
+		getURLParameter();
+		handleAddTaskClick();
+	}
+</script>
+</head>
+<body onload="initialize()">
+	<h1>Project View</h1>
+	<div id="projectViewButtons">
+
+		<form>
+			<input type="button" value="Create Project"
+				onClick="location.href='createproject.html'">
+		</form>
+		<form>
+			<input type="button" value="View Team View"
+				onClick="JavaScript: goToTeammateView()">
+		</form>
+		<form name = "addTeammate" method = "post">
+			<label for="Name(s)">Teammate to Add</label> <input name="teammateName"
+				value="" /> 
+				<input type="button" value="Add Teammate" onClick="JavaScript: handleAddTeammateClick(this)">
+		</form>
+		<form name = "removeTeammate" method = "post">
+			<label for="Name(s)">Teammate to Remove</label> <input name="teammateNameR"
+				value="" /> <input type="button" value="Remove Temmate"
+				onClick="JavaScript: processRemove(this)">
+		</form>
+		
+		<form name = "addTask" method = "post">
+			<label for="task Name(s)">Task Name</label> <input name="taskName"
+				value="" /> 
+				<input type="button" value="Add Task" onClick="JavaScript: handleAddTaskClick(this)">
+		</form>
+
+
+		
+
+	</div>
+	<form>
+	<label for="Project"><b>Project:</b></label>
+	<div id="projectList"></div> 
+	</form>
+	
+	<form>
+	<label for="tasks"><b>Tasks: </b></label>
+	<div id="taskList"></div> 
+	</form>
+	
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type='text/javascript' src='../js/api.js'></script>
+<script type='text/javascript' src='../js/create.js'></script>
+<script type='text/javascript' src='../js/delete.js'></script>
+<script type='text/javascript' src='../js/get_projectList.js'></script>
+<script type='text/javascript' src='../js/archive.js'></script>
+<script type="text/javascript">
+	function listProjects() {
+		// get all projects
+		//refreshProjectsList();
+	}
+</script>
+</head>
+<body>
+	<h1>Administrator View</h1>
+	<div id="admin view buttons">
+
+		<form id = "listProj" name = "List Projects" method = "get">
+			<input type="button" value="List Projects" onClick="JavaScript:refreshProjectsList(this);">
+		</form>
+		
+
+		<div id="projectList"></div>
+
+	</div>
+
+</body>
+
+</html>
