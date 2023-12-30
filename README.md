@@ -25,7 +25,7 @@ To set up the Project Management System locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/argrabowski/project-management-system.git
    ```
 
 2. Open the project in your preferred Java development environment.
