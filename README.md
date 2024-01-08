@@ -1,10 +1,6 @@
 # Project Management System
 
-This repository contains the source code for a simple Project Management System implemented using AWS Lambda functions in Java. The system allows users to manage projects, tasks, teammates, and assignments.
-
-## Overview
-
-The Project Management System is designed to assist in managing projects, tasks, and teammates efficiently. It is built using AWS Lambda functions, allowing for serverless execution and easy scalability. The system leverages AWS services for database management and provides a simple yet effective interface for project management.
+This repository contains the source code for a simple Project Management System implemented using AWS Lambda functions in Java. The system allows users to manage projects, tasks, teammates, and assignments. It is built using AWS Lambda functions, allowing for serverless execution and easy scalability. The system leverages AWS services for database management and provides a simple yet effective interface for project management.
 
 ## Features
 
