@@ -35,7 +35,7 @@ function handleCreateClick(e) {
 				console.log(js);
 				var pname = js["response"];
 				console.log(pname)
-				location.href='https://3733projectappstabit.s3.us-east-2.amazonaws.com/html/index.html?name='+pname;
+				location.href='https://project-management-system.s3.amazonaws.com/html/project-view.html?name='+pname;
 			} else {
 				console.log("actual:" + xhr.responseText)
 				var js = JSON.parse(xhr.responseText);
