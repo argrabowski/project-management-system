@@ -15,10 +15,10 @@ import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 
 import arobgrab.db.ProjectsDAO;
-import arobgrab.http.listAllProjectsResponse;
+import arobgrab.http.ListAllProjectsResponse;
 import arobgrab.model.Project;
 
-public class ListAllProjectsHandler implements RequestHandler<Object,listAllProjectsResponse> {
+public class ListAllProjectsHandler implements RequestHandler<Object,ListAllProjectsResponse> {
 	public LambdaLogger logger;
 
 	List<Project> getProjects() throws Exception {
@@ -29,16 +29,16 @@ public class ListAllProjectsHandler implements RequestHandler<Object,listAllProj
 	}
 
 	@Override
-	public listAllProjectsResponse handleRequest(Object input, Context context)  {
+	public ListAllProjectsResponse handleRequest(Object input, Context context)  {
 		logger = context.getLogger();
 		logger.log("Loading Java Lambda handler to list all projects");
 
-		listAllProjectsResponse response;
+		ListAllProjectsResponse response;
 		try {
 			List<Project> list = getProjects();
-			response = new listAllProjectsResponse(list, 200);
+			response = new ListAllProjectsResponse(list, 200);
 		} catch (Exception e) {
-			response = new listAllProjectsResponse(403, e.getMessage());
+			response = new ListAllProjectsResponse(403, e.getMessage());
 		}
 
 		return response;

@@ -153,8 +153,6 @@ public class ProjectsDAO {
         String name  = resultSet.getString("pname");
         boolean isArchived = resultSet.getBoolean("archived");
         int completionStatus = resultSet.getInt("completionstatus");
-        boolean isArchived = resultSet.getBoolean("isArchived");
-        float completionStatus = resultSet.getFloat("completionStatus");
 
         return new Project(name, isArchived, completionStatus);
     }

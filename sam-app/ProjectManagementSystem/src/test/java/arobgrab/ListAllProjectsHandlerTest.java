@@ -9,16 +9,16 @@ import org.junit.Test;
 import com.google.gson.Gson;
 
 import arobgrab.db.ProjectsDAO;
-import arobgrab.http.listAllProjectsResponse;
+import arobgrab.http.ListAllProjectsResponse;
 import arobgrab.model.Project;
 
-public class ListAllProjectsHandlerTesk extends LambdaTest {
+public class ListAllProjectsHandlerTest extends LambdaTest {
     @Test
     public void testListAllProjects() {
     	ListAllProjectsHandler h = new ListAllProjectsHandler();
 
     	Object obj = new Object();
-    	listAllProjectsResponse resp = (listAllProjectsResponse) h.handleRequest(obj, createContext("create"));
+    	ListAllProjectsResponse resp = (ListAllProjectsResponse) h.handleRequest(obj, createContext("create"));
 
         Assert.assertEquals(200, resp.statusCode);
     }
