@@ -84,7 +84,7 @@ public class DecomposeTaskHandlerTest extends LambdaTest {
     	int rndNum = (int)(990*(Math.random())) % allNonSubtasks.size() - 1;
     	String var = allNonSubtasks.get(rndNum).id;
 
-    	DecomposeTaskRequest ccr = new DecomposeTaskRequest(var, "subsubtask1, subsubtask2,subsubtask3,    subsubtask4");
+    	DecomposeTaskRequest ccr = new DecomposeTaskRequest(var, "subsubtask1,subsubtask2,subsubtask3,subsubtask4");
         String SAMPLE_INPUT_STRING = new Gson().toJson(ccr);
 
         try {
