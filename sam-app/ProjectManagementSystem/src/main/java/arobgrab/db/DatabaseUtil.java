@@ -9,10 +9,10 @@ public class DatabaseUtil {
 	public static String dbPassword;
 
 	public final static String jdbcTag = "jdbc:mysql://";
-	public final static String rdsMySqlDatabasePort = "3306";
+	public final static String rdsMySqlDatabasePort = "3315";
 	public final static String multiQueries = "?allowMultiQueries=true";
 
-	public final static String dbName = "sys";
+	public final static String dbName = "pmsDB";
 	public final static String testingName = "tmp";
 
 	static Connection conn;

@@ -8,10 +8,10 @@ public class CreateProjectRequest {
 	public String id;
 	public boolean system;
 
-	public String getName( ) { return name; }
+	public String getName() { return name; }
 	public void setName(String name) { this.name = name; }
 
-	public String getID( ) { return id; }
+	public String getID() { return id; }
 	public void setID(String id) { this.id = id; }
 
 	public boolean getSystem() { return system; }
@@ -19,7 +19,7 @@ public class CreateProjectRequest {
 
 	public CreateProjectRequest() {}
 
-	public CreateProjectRequest (String n) {
+	public CreateProjectRequest(String n) {
 		this.name = n;
 	}
 
