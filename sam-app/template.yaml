@@ -1,73 +1,80 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
+Globals:
+  Function:
+    Environment:
+      Variables:
+        rdsMySqlDatabaseUrl: pms-instance.clce4qi6mzca.us-east-1.rds.amazonaws.com
+        dbUsername: admin
+        dbPassword: adminpass
 Resources:
-  AddTaskHandler:
+  AddTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
-      Handler: arobgrab.AddTaskHandler::handleRequest
       Runtime: java8
-  AddTeammateHandler:
+      Handler: arobgrab.AddTaskHandler::handleRequest
+  AddTeammate:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.AddTeammateHandler::handleRequest
       Runtime: java8
-  ArchiveProjectHandler:
+  ArchiveProject:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.ArchiveProjectHandler::handleRequest
       Runtime: java8
-  AssignTeammateToTaskHandler:
+  AssignTeammateToTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.AssignTeammateToTaskHandler::handleRequest
       Runtime: java8
-  CreateProjectHandler:
+  CreateProject:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.CreateProjectHandler::handleRequest
       Runtime: java8
-  DecomposeTaskHandler:
+  DecomposeTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.DecomposeTaskHandler::handleRequest
       Runtime: java8
-  DeleteProjectHandler:
+  DeleteProject:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.DeleteProjectHandler::handleRequest
       Runtime: java8
-  ListAllProjectsHandler:
+  ListAllProjects:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.ListAllProjectsHandler::handleRequest
       Runtime: java8
-  MarkTaskHandler:
+  MarkTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.MarkTaskHandler::handleRequest
       Runtime: java8
-  RemoveTeammateHandler:
+  RemoveTeammate:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.RemoveTeammateHandler::handleRequest
       Runtime: java8
-  RenameTaskHandler:
+  RenameTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem
       Handler: arobgrab.RenameTaskHandler::handleRequest
       Runtime: java8
-  UnassignTeammateFromTaskHandler:
+  UnassignTeammateFromTask:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: ProjectManagementSystem

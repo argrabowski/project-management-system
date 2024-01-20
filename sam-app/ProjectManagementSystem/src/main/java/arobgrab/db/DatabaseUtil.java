@@ -30,17 +30,17 @@ public class DatabaseUtil {
 
 		dbUsername = System.getenv("dbUsername");
 		if (dbUsername == null) {
-			System.err.println("Environment variable dbUsername is not set");
+			System.out.println("Environment variable dbUsername is not set");
 		}
 
 		dbPassword = System.getenv("dbPassword");
 		if (dbPassword == null) {
-			System.err.println("Environment variable dbPassword is not set");
+			System.out.println("Environment variable dbPassword is not set");
 		}
 
 		rdsMySqlDatabaseUrl = System.getenv("rdsMySqlDatabaseUrl");
 		if (rdsMySqlDatabaseUrl == null) {
-			System.err.println("Environment variable rdsMySqlDatabaseUrl is not set");
+			System.out.println("Environment variable rdsMySqlDatabaseUrl is not set");
 		}
 
 		try {

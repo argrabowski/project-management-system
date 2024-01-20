@@ -118,7 +118,6 @@ public class TestContext implements Context {
     }
 
     private static class TestLogger implements LambdaLogger {
-
         @Override
         public void log(String message) {
             System.err.println(message);

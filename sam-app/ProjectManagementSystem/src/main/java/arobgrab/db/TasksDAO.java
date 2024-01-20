@@ -118,6 +118,7 @@ public class TasksDAO {
 
 			return true;
 		} catch (Exception e) {
+			System.out.println(e.toString());
 			throw new Exception("Failed to insert task: " + e.getMessage());
 		}
 	}

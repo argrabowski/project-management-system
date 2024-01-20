@@ -6,7 +6,7 @@ public class AddTaskRequest {
 
 	public AddTaskRequest() {}
 
-	public AddTaskRequest (String taskName, String projectName) {
+	public AddTaskRequest(String taskName, String projectName) {
 		this.taskName = taskName;
 		this.projectName = projectName;
 	}

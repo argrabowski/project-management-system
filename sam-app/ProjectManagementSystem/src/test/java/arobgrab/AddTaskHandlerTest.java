@@ -20,7 +20,7 @@ import arobgrab.model.Teammate;
 public class AddTaskHandlerTest extends LambdaTest {
     void testSuccessInput(String incoming) throws IOException {
     	AddTaskHandler handler = new AddTaskHandler();
-    	AddTaskRequest req = new Gson().fromJson(incoming,  AddTaskRequest.class);
+    	AddTaskRequest req = new Gson().fromJson(incoming, AddTaskRequest.class);
 
         AddTaskResponse resp = (AddTaskResponse) handler.handleRequest(req, createContext("add"));
         Assert.assertEquals(200, resp.statusCode);
