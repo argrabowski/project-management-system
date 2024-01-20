@@ -4,6 +4,8 @@ Globals:
   Function:
     CodeUri: ProjectManagementSystem
     Runtime: java8
+    Timeout: 15
+    MemorySize: 512
     VpcConfig:
       SecurityGroupIds:
         - sg-003b5acd448bc851b
