@@ -1,6 +1,6 @@
-var base_url = "https://q13xxd2qz0.execute-api.us-east-2.amazonaws.com/beta/";
+var base_url = "https://3jrgi3tr5b.execute-api.us-east-1.amazonaws.com/prod/";
 
-var list_url   = base_url + "listProjects";
+var list_url = base_url + "listProjects";
 var create_url = base_url + "createProject";
 var delete_url = base_url + "deleteProject";
 var add_task_url = base_url + "addTasks";
