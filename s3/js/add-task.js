@@ -81,9 +81,9 @@ function handleAddTaskClick(e) {
 						}
 						if (!hasSub) {
 							if (!isMarked) {
-								output = output + "<div id=\"" + taskid + "\"> <p style='margin-left: "+40*tabs+"px'>" + outlineid + ". " + name +"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='gray-check.png'></img></a> <input type='button' value='Rename' onClick='javaScript:promptRename(\""+taskid+"\",this)'> "+"<input type='button' value='Decompose' onClick='javaScript:promptDecompose(\""+taskid+"\",this)'><input type='button' value='Assign' onClick='javaScript:promptAssign(\""+taskid+"\",this)'><br></p> <p style='margin-left: "+40*(tabs+1)+"px'>"+teammates+"</p> </div>";
+								output = output + "<div id=\"" + taskid + "\"> <p style='margin-left: "+40*tabs+"px'>" + outlineid + ". " + name +"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='../imgs/gray-check.png'></img></a> <input type='button' value='Rename' onClick='javaScript:promptRename(\""+taskid+"\",this)'> "+"<input type='button' value='Decompose' onClick='javaScript:promptDecompose(\""+taskid+"\",this)'><input type='button' value='Assign' onClick='javaScript:promptAssign(\""+taskid+"\",this)'><br></p> <p style='margin-left: "+40*(tabs+1)+"px'>"+teammates+"</p> </div>";
 							} else {
-								output = output + "<div id=\"" + taskid + "\"> <p style='margin-left: "+40*tabs+"px'>" + outlineid + ". " + name +"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='green-check.png'></img></a> <input type='button' value='Rename' onClick='javaScript:promptRename(\""+taskid+"\",this)'> <br></p>"+"<p style='margin-left: "+40*(tabs+1)+"px'>"+teammates+"</p></div>";
+								output = output + "<div id=\"" + taskid + "\"> <p style='margin-left: "+40*tabs+"px'>" + outlineid + ". " + name +"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='../imgs/green-check.png'></img></a> <input type='button' value='Rename' onClick='javaScript:promptRename(\""+taskid+"\",this)'> <br></p>"+"<p style='margin-left: "+40*(tabs+1)+"px'>"+teammates+"</p></div>";
 							}
 						} else {
 							output = output + "<div id=\"" + taskid + "\"> <p style='margin-left: "+40*tabs+"px'>" + outlineid + ". " + name +"  <input type='button' value='Rename' onClick='javaScript:promptRename(\""+taskid+"\",this)'><br></p></div>";

@@ -28,9 +28,9 @@ function processListResponse(result) {
 		if (sysvar) {
 			output = output + "<div id=\"const" + pname + "\"><b>" + pname + "<br></div>";
 		} else if(arch == true) {
-			output = output + "<div id=\"const" + pname + "\"><b>" + pname + "<a href='javaScript:requestDelete(\"" + pname + "\")'><img src='delete-icon.png'></img></a> <i>"+completion+"%</i><br></div>";
+			output = output + "<div id=\"const" + pname + "\"><b>" + pname + "<a href='javaScript:requestDelete(\"" + pname + "\")'><img src='../imgs/delete-icon.png'></img></a> <i>"+completion+"%</i><br></div>";
 		} else {
-			output = output + "<div id=\"const" + pname + "\"><b>" + pname + "<a href='javaScript:requestDelete(\"" + pname + "\")'><img src='delete-icon.png'></img></a> <a href='javaScript:requestArchive(\"" + pname + "\")'><img src='archive-icon.png'></img></a> <i>"+completion+"%</i><br></div>";
+			output = output + "<div id=\"const" + pname + "\"><b>" + pname + "<a href='javaScript:requestDelete(\"" + pname + "\")'><img src='../imgs/delete-icon.png'></img></a> <a href='javaScript:requestArchive(\"" + pname + "\")'><img src='../imgs/archive-icon.png'></img></a> <i>"+completion+"%</i><br></div>";
 		}
 	}
 	projList.innerHTML = output;
