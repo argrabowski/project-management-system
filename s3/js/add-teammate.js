@@ -67,9 +67,9 @@ function handleAddTeammateClick(e) {
 									var isMarked = task.isMarked;
 									var taskid = task.id;
 									if (!isMarked) {
-										tasks=tasks+"<p style='margin-left: "+40+"px'>"+outlineId+". "+taskName+"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='gray-check.png'></img></a></p>";
+										tasks=tasks+"<p style='margin-left: "+40+"px'>"+outlineId+". "+taskName+"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='../imgs/gray-check.png'></img></a></p>";
 									} else {
-										tasks=tasks+"<p style='margin-left: "+40+"px'>"+outlineId+". "+taskName+"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='green-check.png'></img></a></p>";
+										tasks=tasks+"<p style='margin-left: "+40+"px'>"+outlineId+". "+taskName+"<a href='javaScript:requestMark(\"" + taskid + "\")'><img src='../imgs/green-check.png'></img></a></p>";
 									}
 								}
 							}

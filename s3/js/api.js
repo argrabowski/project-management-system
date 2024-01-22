@@ -1,4 +1,4 @@
-var base_url = "https://3jrgi3tr5b.execute-api.us-east-1.amazonaws.com/alpha/";
+var base_url = "https://uyn8iazbj0.execute-api.us-east-1.amazonaws.com/prod/";
 
 var list_url = base_url + "listProjects";
 var create_url = base_url + "createProject";
