@@ -13,9 +13,9 @@ function promptAssign(id, e){
 
 function processAssign(id, name, pname) {
 	var data = {};
-	data["teammateName"]=name;
+	data["teammateName"] = name;
 	data["taskId"] = id;
-	data["projectName"]=pname;
+	data["projectName"] = pname;
 	var js = JSON.stringify(data);
 	console.log("JS:" + js);
 	var xhr = new XMLHttpRequest();

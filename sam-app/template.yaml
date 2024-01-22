@@ -40,6 +40,8 @@ Resources:
       Handler: arobgrab.ArchiveProjectHandler::handleRequest
       Policies:
         - AWSLambda_FullAccess
+  AssignTeammateToTask:
+    Type: AWS::Serverless::Function
     Properties:
       Handler: arobgrab.AssignTeammateToTaskHandler::handleRequest
       Policies:
