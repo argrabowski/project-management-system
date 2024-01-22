@@ -1,1 +1,4 @@
 sam-app/.aws-sam/
+sam-app/template.yaml
+sam-app/samconfig.toml
+sam-app/env.json
