@@ -1,0 +1,96 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Globals:
+  Function:
+    CodeUri: ProjectManagementSystem
+    Runtime: java8
+    Timeout: 15
+    MemorySize: 512
+    VpcConfig:
+      SecurityGroupIds:
+        - sg-003b5acd448bc851b
+      SubnetIds:
+        - subnet-09217d0b8429c6883
+        - subnet-01fbf74d74e0211ab
+        - subnet-0ef7f64323967edb6
+        - subnet-0896207bfef9ad15f
+        - subnet-0c9ba8353540d4207
+        - subnet-00d516d86d26f7792
+    Environment:
+      Variables:
+        rdsMySqlDatabaseUrl: pms-instance.clce4qi6mzca.us-east-1.rds.amazonaws.com
+        dbUsername: admin
+        dbPassword: adminpass
+Resources:
+  AddTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.AddTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  AddTeammate:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.AddTeammateHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  ArchiveProject:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.ArchiveProjectHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  AssignTeammateToTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.AssignTeammateToTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  CreateProject:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.CreateProjectHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  DecomposeTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.DecomposeTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  DeleteProject:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.DeleteProjectHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  ListAllProjects:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.ListAllProjectsHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  MarkTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.MarkTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  RemoveTeammate:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.RemoveTeammateHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  RenameTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.RenameTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
+  UnassignTeammateFromTask:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: arobgrab.UnassignTeammateFromTaskHandler::handleRequest
+      Policies:
+        - AWSLambda_FullAccess
