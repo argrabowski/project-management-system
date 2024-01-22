@@ -2,7 +2,7 @@
 
 Welcome to the Project Management System! This AWS-based project provides a comprehensive system for managing projects, tasks, teammates, and assignments. Below is a guide outlining the capabilities of regular users and admins, along with relevant links for project interaction.
 
-## Interaction Links:
+## Interaction Links
 
 1. **Create Project:** [Create and View New Project](https://project-management-system.s3.amazonaws.com/html/create-project.html)
 
@@ -13,7 +13,7 @@ Welcome to the Project Management System! This AWS-based project provides a comp
   <img src="https://github.com/argrabowski/project-management-system/assets/64287065/06ad8bb7-f778-468c-a24d-86c843e47437" alt="Admin View" height="120px">
 </div>
 
-## Project and Team Views:
+## Project and Team Views
 
 - **Project View:** Shows the project corresponding to the current URL, displaying its tasks. This view allows users to add/remove tasks and teammates.
 
@@ -29,9 +29,9 @@ Welcome to the Project Management System! This AWS-based project provides a comp
   <img src="https://github.com/argrabowski/project-management-system/assets/64287065/70dd98e3-dd23-4347-acd3-511bc2559155" alt="proj2" height="275px">
 </div>
 
-## Capabilities:
+## Capabilities
 
-### Users:
+### Users
 
 1. **Create Project:** Users can create a new project.
 
@@ -51,7 +51,7 @@ Welcome to the Project Management System! This AWS-based project provides a comp
 
 9. **Unassign Teammate from Task:** Users can unassign teammates from tasks.
 
-### Admins:
+### Admins
 
 1. **List All Projects:** Admins can view a list of all projects.
 
@@ -59,6 +59,6 @@ Welcome to the Project Management System! This AWS-based project provides a comp
 
 3. **Delete Project:** Admins can delete projects.
 
-## Getting Started:
+## Getting Started
 
 To get started, navigate to the provided links for project creation and admin view. Regular users and admins can leverage the mentioned capabilities to effectively manage projects and tasks within the system.
