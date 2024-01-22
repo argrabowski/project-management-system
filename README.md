@@ -1,63 +1,65 @@
 # Project Management System
 
-This repository contains the source code for a simple Project Management System implemented using AWS Lambda functions in Java. The system allows users to manage projects, tasks, teammates, and assignments. It is built using AWS Lambda functions, allowing for serverless execution and easy scalability. The system leverages AWS services for database management and provides a simple yet effective interface for project management.
+Welcome to the Project Management System! This AWS-based project provides a comprehensive system for managing projects, tasks, teammates, and assignments. Below is a guide outlining the capabilities of regular users and admins, along with relevant links for project interaction.
 
-## Features
+## Interaction Links:
 
-- **Create and Delete Projects:** Users can create new projects and delete existing projects.
+1. **Create Project:**
+   - [Create a New Project](https://project-management-system.s3.amazonaws.com/html/create-project.html)
 
-- **Add and Remove Teammates:** Teammates can be added to or removed from a project.
+2. **Admin View:**
+   - [Admin View](https://project-management-system.s3.amazonaws.com/html/admin-view.html)
 
-- **Create, Decompose, Rename, and Mark Tasks:** Users can create tasks, decompose tasks into subtasks, rename tasks, and mark tasks as completed.
+## Project and Team Views:
 
-- **Assign and Unassign Teammates from Tasks:** Teammates can be assigned to tasks, and assignments can be removed.
+- **Project View:**
+   - Shows the project corresponding to the current URL, displaying its tasks. This view allows users to add/remove tasks and teammates.
 
-- **List All Projects:** Retrieve a list of all projects along with their details.
+- **Team View:**
+   - Displays the list of teammates associated with the project. Users can add or remove teammates directly from this view.
 
-## Setup
+## Capabilities:
 
-To set up the Project Management System locally, follow these steps:
+### Users:
 
-1. Clone the repository:
+1. **Create Project:**
+   - Users can create a new project.
 
-   ```bash
-   git clone https://github.com/argrabowski/project-management-system.git
-   ```
+1. **Add Task:**
+   - Users can add new tasks to a project.
 
-2. Open the project in your preferred Java development environment.
+2. **Add Teammate:**
+   - Users can add new teammates to a project.
 
-3. Configure AWS credentials for the AWS SDK.
+3. **Assign Teammate to Task:**
+   - Users can assign teammates to tasks.
 
-4. Build and deploy the Lambda functions.
+4. **Decompose Task:**
+   - Users can decompose tasks into subtasks.
 
-## AWS Lambda Functions
+5. **Mark Task:**
+   - Users can mark tasks as completed.
 
-The system consists of several AWS Lambda functions, each serving a specific purpose. Here are some key functions:
+6. **Rename Task:**
+   - Users can rename tasks.
 
-- **CreateProjectHandler:** Handles requests to create a new project.
+2. **Remove Teammate:**
+   - Users can remove teammates from projects.
 
-- **ListAllProjectsHandler:** Retrieves a list of all projects.
+7. **Unassign Teammate from Task:**
+   - Users can unassign teammates from tasks.
 
-- **AddTeammateHandler:** Adds a teammate to a project.
+### Admins:
 
-- **RemoveTeammateHandler:** Removes a teammate from a project.
+1. **List All Projects:**
+   - Admins can view a list of all projects.
 
-- **CreateTaskHandler:** Handles requests to create a new task.
+2. **Archive Project:**
+   - Admins can archive projects.
 
-- **DecomposeTaskHandler:** Decomposes a task into subtasks.
+3. **Delete Project:**
+   - Admins can delete projects.
 
-- **RenameTaskHandler:** Renames a task.
+## Getting Started:
 
-- **MarkTaskHandler:** Marks a task as completed.
-
-- **UnassignTeammateFromTaskHandler:** Unassigns a teammate from a task.
-
-- **DeleteProjectHandler:** Handles requests to delete a project.
-
-## Database
-
-The system uses a relational database to store information about projects, tasks, teammates, and assignments. AWS services such as RDS may be utilized for this purpose.
-
-## Usage
-
-To use the Project Management System, interact with the Lambda functions through an API Gateway or other interfaces. API requests should include appropriate JSON payloads based on the function being invoked.
+To get started, navigate to the provided links for project creation and admin view. Regular users and admins can leverage the mentioned capabilities to effectively manage projects and tasks within the system.
